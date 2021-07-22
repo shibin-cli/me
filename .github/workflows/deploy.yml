@@ -45,6 +45,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /root/home/nuxt-app
+            cd /home/www
             wget https://github.com/shibin-cli/me/releases/latest/download/release.tgz -O release.tgz
             tar zxvf release.tgz
