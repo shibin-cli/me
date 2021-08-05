@@ -8,99 +8,24 @@
     <title>Shibin</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,500,700">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        html {
-            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        header {
-            height: 50px;
-            position: fixed;
-            min-width: 100%;
-            padding: 0 50px 0 50px;
-            box-sizing: border-box;
-            background: #fff;
-            box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
-            line-height: 50px;
-        }
-
-
-        header .logo {
-            float: left;
-        }
-
-        header .logo img {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-
-        header .nav {
-            float: right;
-        }
-
-        header .nav>div {
-            float: left;
-            padding: 0 20px;
-        }
-
-        .container {
-            padding: 50px 20px 10px;
-            max-width: 800px;
-            margin: 0 auto;
-            animation: fade-in 2s ease 1;
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        h2 {
-            color: #3eaf7c;
-        }
-
-        a {
-            color: #3eaf7c;
-        }
-
-        code {
-            background: rgba(27, 31, 35, 0.05);
-            border-radius: 6px;
-            padding: .2em .4em;
-
-        }
-
-        code img {
-            background: #fff;
-        }
-
-        p img {
-            max-width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="logo"><img src="favicon.ico" alt=""></div>
-        <div class="nav">
-            <div><a href="https://github.com/shibin-cli" target="_blank">Github</a></div>
-            <div><a href="https://github.com/blog" target="_blank">博客</a></div>
-            <div><a href="mailto:shibiny6@gmail.com" target="_self">邮箱</a></div>
+        <div class="menu" id="menu">
+            <span class="iconfont icon-caidan"></span>
         </div>
+        <div class="logo"><img src="favicon.ico" alt="Shibin"></div>
+        <ul class="nav" id="nav">
+            <li class="nav-item"><a href="https://github.com/shibin-cli" target="_blank">Github</a></li>
+            <li class="nav-item"><a href="https://github.com/blog" target="_blank">博客</a></li>
+            <li class="nav-item"><a href="mailto:shibiny6@gmail.com" target="_self">邮箱</a></li>
+        </ul>
     </header>
     <div class="container">
-        <h2>关于我</h2>
+        <section>
+            <h2>关于我</h2>
         <p>
             熟练掌握 html、css、js
         </p>
@@ -111,26 +36,34 @@
         <p> 熟悉nodejs的使用，熟悉express、koa的使用（在npm上发布过koa的中间件<a href="https://www.npmjs.com/package/koa-decorator-router"
                 target="_blank">koa-decorator-router</a>）
         </p>
-        <h2>掌握的技术</h2>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"></code>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-        <code><img height="20"
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"></code>
-        <code><img height="20"
-                src="https://camo.githubusercontent.com/50e43473527a57747fb7cd9b0061355205ac9a2763207a78d9812ceef1da52c0/68747470733a2f2f726f6c6c75706a732e6f72672f6c6f676f2e737667"></code>
-        <p><img src="https://camo.githubusercontent.com/d8667140322c7d1c2c06e6e7814819b2662171555919f4c354dc6823c5e0deec/68747470733a2f2f6769746875622d726561646d652d73746174732d73686962696e2e76657263656c2e6170702f6170693f757365726e616d653d73686962696e2d636c692673686f775f69636f6e733d74727565267468656d653d767565266c6f63616c653d636e"
-                alt="Github统计数据"></p>
-        <p> <img src="https://camo.githubusercontent.com/9b5d3f65e7fee227a091febcafa223351a7f8d32c40b1044543f576e1df38de2/68747470733a2f2f6769746875622d726561646d652d73746174732d73686962696e2e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d73686962696e2d636c692626686964653d656a73267468656d653d666c61672d696e646961266c6f63616c653d636e"
-                alt="最常使用的语言"></p>
+        </section>
+        <section>
+            <h2>掌握的技术</h2>
+        <div>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"></code>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
+            <code><img height="20"
+                    src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"></code>
+            <code><img height="20"
+                    src="https://camo.githubusercontent.com/50e43473527a57747fb7cd9b0061355205ac9a2763207a78d9812ceef1da52c0/68747470733a2f2f726f6c6c75706a732e6f72672f6c6f676f2e737667"></code>
+        </div>
+        </section>
+        <div class="statistics">
+            <div class="statistics-github"><img src="https://camo.githubusercontent.com/d8667140322c7d1c2c06e6e7814819b2662171555919f4c354dc6823c5e0deec/68747470733a2f2f6769746875622d726561646d652d73746174732d73686962696e2e76657263656c2e6170702f6170693f757365726e616d653d73686962696e2d636c692673686f775f69636f6e733d74727565267468656d653d767565266c6f63616c653d636e"
+                alt="Github统计数据"></div>
+        <div  class="statistics-lan"> <img src="https://camo.githubusercontent.com/9b5d3f65e7fee227a091febcafa223351a7f8d32c40b1044543f576e1df38de2/68747470733a2f2f6769746875622d726561646d652d73746174732d73686962696e2e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d73686962696e2d636c692626686964653d656a73267468656d653d666c61672d696e646961266c6f63616c653d636e"
+                alt="最常使用的语言"></div>
+        </div>
     </div>
+    <div class="mark" id="mark"></div>
 </body>
-
+<script src="./js/main.js"></script>
 </html>

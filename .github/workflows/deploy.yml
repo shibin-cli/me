@@ -25,7 +25,7 @@ jobs:
           prerelease: false
       - name: Build 🔧 
         run: |
-          tar -zcvf release.tgz index.html
+          tar -zcvf release.tgz index.html favicon.ico css js
       # 上传构建结果到 Release
       - name: Upload Release Asset
         id: upload-release-asset
