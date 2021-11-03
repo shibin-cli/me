@@ -81,6 +81,7 @@ header .menu {
     max-width: 800px;
     margin: 0 auto;
 }
+
 section {
     margin-bottom: 20px;
 }
@@ -195,4 +196,14 @@ code {
     .statistics .statistics-lan {
         width: 100%;
     }
+}
+
+.icp {
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.icp img {
+    vertical-align: middle;
 }
